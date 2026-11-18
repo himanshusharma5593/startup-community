@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9f7;
+    color: #ffffff;
+}
+
+/* Announcement Bar */
+
+.announcement {
+    width: 100%;
+    height: 26px;
+    background: #ffedaa;
+    color: #8c3b12;
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 10px;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 412px;
+    background: linear-gradient(
+        110deg,
+        #0b1927,
+        #0d2b1b
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Top Tag */
+
+.tag {
+    background: #103b2b;
+    color: #20d477;
+    border: 1px solid #145c3b;
+    border-radius: 30px;
+    padding: 7px 16px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Main Heading */
+
+.hero h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.3;
+    max-width: 600px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #20cc70;
+}
+
+/* Description */
+
+.description {
+    color: #c5d2d0;
+    font-size: 13px;
+    line-height: 21px;
+    max-width: 390px;
+    margin-top: 8px;
+}
+
+/* Members */
+
+.members {
+    margin-top: 19px;
+    background: #243a30;
+    border: 1px solid #34483c;
+    border-radius: 30px;
+    padding: 11px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.members span {
+    color: #20cf70;
+    font-size: 11px;
+}
+
+/* WhatsApp Button */
+
+.join-btn {
+    margin-top: 32px;
+    width: 320px;
+    max-width: 100%;
+    height: 50px;
+
+    background: linear-gradient(
+        100deg,
+        #20ce70,
+        #119b86
+    );
+
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    box-shadow: 0 10px 25px rgba(32, 206, 112, 0.2);
+}
+
+.join-btn:hover {
+    transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+    font-size: 23px;
+}
+
+/* Small Text */
+
+.small-text {
+    color: #899b91;
+    font-size: 10px;
+    margin-top: 9px;
+}
+
+/* Statistics */
+
+.statistics {
+    min-height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.stat-box {
+    width: 160px;
+    min-height: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #eeeeee;
+}
+
+.stat-box:last-child {
+    border-right: none;
+}
+
+.stat-box h2 {
+    color: #119b89;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.stat-box p {
+    color: #929292;
+    font-size: 9px;
+    margin-top: 8px;
+}
+
+/* Trust Section */
+
+.trust {
+    min-height: 41px;
+    background: #ffffff;
+    border-top: 1px solid #eeeeee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    color: #929292;
+    font-size: 10px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .announcement {
+        font-size: 9px;
+        height: auto;
+        min-height: 26px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 45px 18px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .join-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .statistics {
+        width: 100%;
+    }
+
+    .stat-box {
+        width: 33.33%;
+        min-height: 80px;
+    }
+
+    .stat-box h2 {
+        font-size: 20px;
+    }
+
+    .stat-box p {
+        font-size: 8px;
+    }
+
+    .trust {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 8px;
+        font-size: 9px;
+    }
+}
+.join-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 17px 35px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #20d477, #079b83);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.join-btn svg {
+    flex-shrink: 0;
+}
+
+.join-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 25px #20d47755;
+}
